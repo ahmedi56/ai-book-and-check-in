@@ -1,20 +1,5 @@
-<<<<<<< HEAD
-node_modules/
-=======
-node_modules
-node_modules/
 .env
-.env.*
-!.env.example
->>>>>>> b97dc54bb97eafb7de804357035f6134eb8b0840
-.next/
-out/
-dist/
-.env
-.env.*
-!.env.example
-<<<<<<< HEAD
-*.pem
-*.key
-=======
->>>>>>> b97dc54bb97eafb7de804357035f6134eb8b0840
+.env.local
+.env.*.local
+.next/dev/cache/turbopack/v16.4.0-e273d5b2/00000427.sst
+node_modules/@next/swc-win32-x64-msvc/next-swc.win32-x64-msvc.node

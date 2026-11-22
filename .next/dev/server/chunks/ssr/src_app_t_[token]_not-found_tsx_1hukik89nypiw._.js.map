@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/T560/Desktop/ai-book-checkin/src/app/t/[token]/not-found.tsx"],"sourcesContent":["export default function TicketNotFound() {\n  return (\n    <main className=\"mx-auto max-w-md px-5 py-16 text-center\">\n      <h1 className=\"text-2xl font-bold\">Ticket not found</h1>\n      <p className=\"mt-2 text-ink-soft\">This link is not a valid ticket. Open the link from your confirmation message again, or contact the venue with your booking reference.</p>\n    </main>\n  );\n}\n"],"names":["TicketNotFound","className"],"mappings":";;;;;;AAAe,SAASA;IACtB,qBACE,8OAAC;QAAKC,WAAU;;0BACd,8OAAC;gBAAGA,WAAU;0BAAqB;;;;;;0BACnC,8OAAC;gBAAEA,WAAU;0BAAqB;;;;;;;;;;;;AAGxC"}}]
+}

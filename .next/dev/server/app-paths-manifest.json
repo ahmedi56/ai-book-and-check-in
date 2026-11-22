@@ -1,0 +1,21 @@
+{
+  "/api/auth/login/route": "app/api/auth/login/route.js",
+  "/api/auth/logout/route": "app/api/auth/logout/route.js",
+  "/api/auth/signup/route": "app/api/auth/signup/route.js",
+  "/api/b/[bid]/checkin/route": "app/api/b/[bid]/checkin/route.js",
+  "/api/b/[bid]/events/route": "app/api/b/[bid]/events/route.js",
+  "/api/b/[bid]/pulse/route": "app/api/b/[bid]/pulse/route.js",
+  "/api/businesses/route": "app/api/businesses/route.js",
+  "/api/public/[slug]/availability/route": "app/api/public/[slug]/availability/route.js",
+  "/api/public/[slug]/chat/route": "app/api/public/[slug]/chat/route.js",
+  "/app/[slug]/checkin/page": "app/app/[slug]/checkin/page.js",
+  "/app/[slug]/page": "app/app/[slug]/page.js",
+  "/app/[slug]/reservations/[id]/page": "app/app/[slug]/reservations/[id]/page.js",
+  "/app/page": "app/app/page.js",
+  "/b/[slug]/page": "app/b/[slug]/page.js",
+  "/login/page": "app/login/page.js",
+  "/page": "app/page.js",
+  "/setup/page": "app/setup/page.js",
+  "/signup/page": "app/signup/page.js",
+  "/t/[token]/page": "app/t/[token]/page.js"
+}

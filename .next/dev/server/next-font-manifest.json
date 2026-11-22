@@ -1,0 +1,17 @@
+{
+  "app": {
+    "[project]/src/app/app/[slug]/checkin/page": [],
+    "[project]/src/app/app/[slug]/page": [],
+    "[project]/src/app/app/[slug]/reservations/[id]/page": [],
+    "[project]/src/app/app/page": [],
+    "[project]/src/app/b/[slug]/page": [],
+    "[project]/src/app/login/page": [],
+    "[project]/src/app/page": [],
+    "[project]/src/app/setup/page": [],
+    "[project]/src/app/signup/page": [],
+    "[project]/src/app/t/[token]/page": []
+  },
+  "appUsingSizeAdjust": false,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

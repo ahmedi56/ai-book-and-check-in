@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/T560/Desktop/ai-book-checkin/src/instrumentation.ts"],"sourcesContent":["// Runs once when the server starts.\nexport async function register() {\n  if (process.env.NEXT_RUNTIME === \"nodejs\" && process.env.WORKER_IN_PROCESS !== \"0\") {\n    const { startWorker } = await import(\"./lib/notify/worker\");\n    startWorker();\n  }\n}\n"],"names":["register","process","env","WORKER_IN_PROCESS","startWorker"],"mappings":"AAAA,oCAAoC;;;;;AAC7B,eAAeA;IACpB,IAAI,+CAA6B,YAAYC,QAAQC,GAAG,CAACC,iBAAiB,KAAK,KAAK;QAClF,MAAM,EAAEC,WAAW,EAAE,GAAG;QACxBA;IACF;AACF"}}]
+}
