@@ -24,10 +24,22 @@
 
 Powered by an **AI model API key** for conversational booking assistance, **PostgreSQL** for concurrency protection, signed QR passes for arrival verification, and a live staff dashboard:
 
-![Pipeline Flow](./assets/pipeline.svg)
+<p align="center">
+  <img alt="Pipeline Flow" src="https://img.shields.io/badge/01%C2%B7AI%20Assistant-Intent%20%26%20Rules-6366F1?style=for-the-badge&logo=openai&logoColor=white" />
+  <img alt="Arrow" src="https://img.shields.io/badge/%E2%9E%9C-%20-334155?style=flat-square" />
+  <img alt="PG Guard" src="https://img.shields.io/badge/02%C2%B7PG%20Guard-Atomic%20Lock-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img alt="Arrow" src="https://img.shields.io/badge/%E2%9E%9C-%20-334155?style=flat-square" />
+  <img alt="QR Ticket" src="https://img.shields.io/badge/03%C2%B7QR%20Ticket-Signed%20Pass-B45309?style=for-the-badge&logo=auth0&logoColor=white" />
+  <img alt="Arrow" src="https://img.shields.io/badge/%E2%9E%9C-%20-334155?style=flat-square" />
+  <img alt="Check-In" src="https://img.shields.io/badge/04%C2%B7Check--In-Verified-1D4ED8?style=for-the-badge&logo=checkmarx&logoColor=white" />
+  <img alt="Arrow" src="https://img.shields.io/badge/%E2%9E%9C-%20-334155?style=flat-square" />
+  <img alt="Staff View" src="https://img.shields.io/badge/05%C2%B7Staff%20View-Live%20Capacity-0F766E?style=for-the-badge&logo=vercel&logoColor=white" />
+</p>
 
-* **01 · AI Booking Assistant** ![AI API](https://img.shields.io/badge/AI%20Model-API%20Key-6366F1?style=flat-square&logo=openai&logoColor=white) Parses booking intent, slot, party size, and business rules using your configured AI model API key to produce a structured booking request and reply.
-* **02 · PostgreSQL Double-Booking Guard** ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Atomic%20Lock-336791?style=flat-square&logo=postgresql&logoColor=white) Runs atomic availability checks and blocks overlapping or duplicate slots to return a confirmed reservation record.
-* **03 · Signed Digital Ticket & QR Pass** ![QR Pass](https://img.shields.io/badge/Ticket-Signed%20QR-B45309?style=flat-square&logo=auth0&logoColor=white) Signs the ticket payload and generates a scannable QR pass for verifiable guest entry.
-* **04 · QR Check-In & Verification** ![Verify](https://img.shields.io/badge/Check--In-Verified-1D4ED8?style=flat-square&logo=checkmarx&logoColor=white) Scans and verifies signature, validity window, and arrival state to record a checked-in status.
-* **05 · Live Staff Dashboard** ![Dashboard](https://img.shields.io/badge/Staff-Live%20View-0F766E?style=flat-square&logo=vercel&logoColor=white) Streams live check-ins, incoming arrivals, and slot or capacity status in real time.
+| Stage | Component | Guarantee / Output |
+| :---: | :--- | :--- |
+| **01** | **AI Booking Assistant** | Parses booking intent, slot, party size, and business rules via configured AI model API key |
+| **02** | **PostgreSQL Double-Booking Guard** | Runs atomic availability checks and blocks overlapping or duplicate reservations at the database layer |
+| **03** | **Signed Digital Ticket & QR Pass** | Issues a cryptographically signed digital ticket and scannable QR code for verifiable guest entry |
+| **04** | **QR Check-In & Verification** | Validates signature, check-in window, and arrival state to mark guests checked in |
+| **05** | **Live Staff Dashboard** | Streams live arrivals, check-in status, and real-time slot capacity for front-desk/venue staff |
