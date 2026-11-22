@@ -22,27 +22,12 @@
 
 ## End-to-End Platform & AI Pipeline
 
-### 01 · AI Booking Assistant
-![Stage 01](https://img.shields.io/badge/01-AI%20Assistant-6366F1?style=flat-square)
-* **What happens:** Parses booking intent, requested slot, party size, and business rules.
-* **Output:** Structured booking request and clear assistant reply.
+Powered by an **AI model API key** for conversational booking assistance, **PostgreSQL** for concurrency protection, signed QR passes for arrival verification, and a live staff dashboard:
 
-### 02 · PostgreSQL Double-Booking Guard
-![Stage 02](https://img.shields.io/badge/02-PostgreSQL%20Guard-0F766E?style=flat-square)
-* **What happens:** Runs atomic availability checks and blocks overlapping or duplicate slots.
-* **Output:** Confirmed reservation record locked in PostgreSQL.
+![Pipeline Flow](./assets/pipeline.svg)
 
-### 03 · Signed Digital Ticket & QR Pass
-![Stage 03](https://img.shields.io/badge/03-Digital%20Ticket-B45309?style=flat-square)
-* **What happens:** Signs the ticket payload and generates a scannable QR pass.
-* **Output:** Tamper-evident digital ticket with QR payload.
-
-### 04 · QR Check-In & Verification
-![Stage 04](https://img.shields.io/badge/04-QR%20Check--In-1D4ED8?style=flat-square)
-* **What happens:** Scans and verifies the ticket signature, validity window, and arrival state.
-* **Output:** Checked-in state transition.
-
-### 05 · Live Staff Dashboard
-![Stage 05](https://img.shields.io/badge/05-Staff%20Dashboard-374151?style=flat-square)
-* **What happens:** Streams live check-ins, incoming arrivals, and slot/capacity status.
-* **Output:** Real-time operational view for staff.
+* **01 · AI Booking Assistant** ![AI API](https://img.shields.io/badge/AI%20Model-API%20Key-6366F1?style=flat-square&logo=openai&logoColor=white) Parses booking intent, slot, party size, and business rules using your configured AI model API key to produce a structured booking request and reply.
+* **02 · PostgreSQL Double-Booking Guard** ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Atomic%20Lock-336791?style=flat-square&logo=postgresql&logoColor=white) Runs atomic availability checks and blocks overlapping or duplicate slots to return a confirmed reservation record.
+* **03 · Signed Digital Ticket & QR Pass** ![QR Pass](https://img.shields.io/badge/Ticket-Signed%20QR-B45309?style=flat-square&logo=auth0&logoColor=white) Signs the ticket payload and generates a scannable QR pass for verifiable guest entry.
+* **04 · QR Check-In & Verification** ![Verify](https://img.shields.io/badge/Check--In-Verified-1D4ED8?style=flat-square&logo=checkmarx&logoColor=white) Scans and verifies signature, validity window, and arrival state to record a checked-in status.
+* **05 · Live Staff Dashboard** ![Dashboard](https://img.shields.io/badge/Staff-Live%20View-0F766E?style=flat-square&logo=vercel&logoColor=white) Streams live check-ins, incoming arrivals, and slot or capacity status in real time.
