@@ -1,9 +1,20 @@
+<<<<<<< HEAD
 node_modules/
+=======
+node_modules
+node_modules/
+.env
+.env.*
+!.env.example
+>>>>>>> b97dc54bb97eafb7de804357035f6134eb8b0840
 .next/
 out/
 dist/
 .env
 .env.*
 !.env.example
+<<<<<<< HEAD
 *.pem
 *.key
+=======
+>>>>>>> b97dc54bb97eafb7de804357035f6134eb8b0840
